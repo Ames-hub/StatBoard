@@ -1,0 +1,118 @@
+.graph {
+    width: 100%;
+    max-width: 100%;
+    max-height: 200px; /* Set the height as needed */
+}
+
+#stats_container a h1 {
+    color: #fff;
+    margin-left: 40px;
+}
+
+#interaction_bar {
+    width: 100%;
+    height: 50px;
+    background-color: #2c2c2c;
+    display: flex;
+    justify-content: left; /* Center align the buttons */
+}
+
+/* Styles all the button elements in int bar */
+#interaction_bar button {
+    width: 50px;
+    height: 100%;
+    background-color: #2c2c2c;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+#interaction_bar button svg {
+    height: 100%;
+    width: 100%;
+}
+
+/* Media query for viewport less than 1024px */
+@media (max-width: 1024px) {
+    #interaction_bar {
+        justify-content: center; /* Center align the buttons */
+    }
+}
+
+#stat_control {
+    width: 100%;
+    height: 150px;
+    background-color: #272727;
+}
+
+#add_container {
+    position: relative;
+    float: left;
+    width: 45%;
+    height: 100%;
+    background-color: #272727;
+}
+
+#delete_container {
+    position: relative;
+    float: right;
+    width: 45%;
+    height: 100%;
+    background-color: #272727;
+}
+
+#stat_control {
+    width: 100%;
+    height: 180px;
+    background-color: #333;
+    border-radius: 8px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+#add_container, #delete_container {
+    width: 40%;
+    height: 80%;
+    background-color: #444;
+    border-radius: 8px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#delete_container {
+    margin-right: 20px;
+}
+
+.sc_form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sc_form input {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.sc_form input[type="submit"] {
+    background-color: #ff6347;
+    width: 40%;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+    .sc_form input {
+        width: 80%;
+    }
+}

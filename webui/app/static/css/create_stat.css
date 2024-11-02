@@ -1,0 +1,69 @@
+#form_content {
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#form_content h1 {
+    text-align: center;
+    color: #cccccc;
+    font-family: 'Arial', sans-serif;
+}
+
+#form_content form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#form_content label {
+    font-size: 1.1em;
+    color: #cccccc;
+}
+
+#form_content input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+#form_content input[type="submit"] {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#form_content input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.graph {
+    width: 100%;
+    max-width: 100%;
+    height: 300px;
+    max-height: 200px; /* Set the height as needed */
+}
+
+#stats_container a h1 {
+    color: #fff;
+    text-align: center;
+}
+/* Align items of container to center vertically using grid */
+#stats_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+    gap: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+    #form_content label {
+        text-align: center;
+    }
+}

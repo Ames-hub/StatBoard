@@ -1,0 +1,206 @@
+#navui {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 200px;
+    height: 100%;
+    background-color: #272727;
+    color: #e2e2e2;
+    border-right: 1px solid #ffffff;
+    overflow: auto;
+}
+
+#logo {
+    position: relative;
+    top: 10px;
+    width: 150px;
+    height: 150px;
+    /* Center the image */
+    margin-left: auto;
+    margin-right: auto;
+    display: block; /* Ensure it's a block-level element for centering to work. IF anyone removes this code, off with your head!!! */
+}
+
+#panel_title {
+    text-align: center;
+    font-size: large;
+    padding: 5px;
+}
+
+#nav {
+    display: block; /* Make each nav link a block-level element */
+    margin-top: 10px; /* Add some space between the links */
+}
+
+.nav-link {
+    display: block;
+    text-align: center; 
+    height: 60px;
+    background-color: #272727;
+    border-bottom: 1px solid #ffffff;
+    color: #e2e2e2;
+    /* Moves the text to the middle left */
+    line-height: 60px;
+    padding-left: 10px;
+    background-repeat: no-repeat;
+    background-position: 10px center;
+}
+
+.nav-svg {
+    position: relative;
+    float: left;
+    left: 0;
+    top: -8px;
+    width: 60px;
+    height: 60px;
+}
+
+.nav-text {
+    position: relative;
+    top: -8px;
+}
+
+#status_detector {
+    /* Centres text */
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    text-align: center;
+    background-color: gray; /*Gray by default, js changes it*/
+    max-width: fit-content;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 20px;
+    margin-bottom: 15px;
+}
+
+@media screen and (max-width: 1024px) {
+    #navui {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 70px;
+        background-color: #272727;
+        color: #e2e2e2;
+        border-bottom: 1px solid #ffffff;
+        overflow: hidden;
+        border-bottom: 1px solid #ffffff;
+    }
+
+    #logo {
+        display: block;
+        position: relative;
+        left: 0;
+        top: 0;
+        width: 60px;
+        height: 60px;
+        margin: 5px;
+        z-index: 3;
+    }
+
+    #panel_title {
+        display: none;
+    }
+
+    #status_detector {
+        display: block;
+
+        position: absolute;
+        left: 60px;
+        top: 7px;
+
+        border-radius: 0 20px 20px 0;
+
+        z-index: 2;
+
+        background-color: red;
+
+        max-width: none;
+        width: 20px;
+        height: 55px;
+    }
+
+    #status_text {
+        display: none;
+    }
+
+    /* Display the nav links horizontally */
+    #nav {
+        display: block;
+        position: relative;
+        top: -70px;
+        width: calc(100% - 80px);
+        float: right;
+        display: flex;
+        margin-top: 0px;
+
+        /* Arranges buttons inside left to right */
+        justify-content: flex-start;
+        gap: 2vw;
+    }
+
+    .nav-link {
+        white-space: nowrap;
+        top: -12px;
+        height: 40px;
+        position: relative;
+        display: inline-block;
+        padding: 10px;
+        margin: 0px;
+        color: #e2e2e2;
+        text-decoration: none;
+        font-size: 1.2em;
+        font-weight: bold;
+        text-align: center;
+        border-bottom: 1px solid #272727;
+    }
+
+    .nav-svg {
+        position: relative;
+        float: left;
+        top: -8px;
+        width: 60px;
+        height: 60px;
+    }
+
+    .nav-text {
+        position: relative;
+        margin-left: 60px;
+        top: -25px;
+    }
+}
+
+@media screen and (max-width: 728px) {
+    .nav-svg {
+        top: 5px;
+        width: 40px;
+        height: 40px;
+    }
+    .nav-text {
+        margin-left: 40px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .nav-svg {
+        top: 5px;
+        width: 40px;
+        height: 40px;
+    }
+    .nav-text {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .nav-svg {
+        top: 7px;
+        width: 30px;
+        height: 30px;
+    }
+
+    #nav {
+        gap: 1vw;
+    }
+}
